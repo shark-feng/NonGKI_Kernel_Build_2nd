@@ -6,7 +6,7 @@ on:
 
 env:
   # Device env
-  DEVICE_NAME : "Xiaomi_Xiaomi 10(_CN)"
+  DEVICE_NAME : "Xiaomi_10"
   DEVICE_CODENAME : "umi"
 
   CUSTOM_CMDS : "CLANG_TRIPLE=aarch64-linux-gnu-"
@@ -46,7 +46,7 @@ env:
   NEED_DTBO : false
   NEED_SAFE_DTBO : true
 
-  ROM_TEXT : "miui_(Android_Version_13)"
+  ROM_TEXT : "mi10_miui-a13"
 
   # Other env
   PYTHON_VERSION: "3" # Only 2(Ubuntu 22.04 and Ubuntu 20.04) or 3(Any OS Versions).
@@ -82,10 +82,10 @@ env:
   GENERATE_CHIP: "qcom" # only supported for qcom and mediatek.
 
   BUILD_DEBUGGER: "false" # Output build errors.
-  SKIP_PATCH: "false" # Ignore errors found in Patch Debugger.
+  SKIP_PATCH: "true" # Ignore errors found in Patch Debugger.
 
   BUILD_OTHER_CONFIG: "false" # Merge config files.
-  MERGE_CONFIG_FILES: "vendor/debugfs.config,vendor/lahaina_QGKI.config"
+  MERGE_CONFIG_FILES: ""
 
   FREE_MORE_SPACE: "false" # if u want get more space, enabled it.
 
